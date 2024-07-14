@@ -87,7 +87,7 @@ const SideBar: FunctionComponent<SideBarProps> = ({ anchor, open, variant, items
             />
           </Tooltip>
 
-          {isAuthenticated && <AppIconButton icon="logout" title="Logout Current User" onClick={onLogout} />}
+          {isAuthenticated && <AppIconButton icon="logout" title="Logout" onClick={onLogout} />}
         </Stack>
       </Stack>
     </Drawer>

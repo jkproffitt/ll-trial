@@ -6,6 +6,7 @@ import AboutView from '@/views/About';
 import DevView from '@/views/Dev';
 import WelcomeView from '@/views/Welcome';
 import NotImplementedView from '@/views/NotImplementedView';
+import { ProfileView } from '@/views/Profile';
 
 const PRIVATE_ROUTES = [
   {
@@ -31,6 +32,11 @@ const PRIVATE_ROUTES = [
         path: '/me',
         element: <NotImplementedView />,
       },
+
+      {
+        path: '/profile',
+        element: <ProfileView />,
+      }
     ],
   },
 ];

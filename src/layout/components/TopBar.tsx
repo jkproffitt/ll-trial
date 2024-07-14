@@ -1,6 +1,7 @@
 import { FunctionComponent, ReactNode } from 'react';
 import { AppBar, Toolbar, Typography } from '@mui/material';
 
+
 interface Props {
   endNode?: ReactNode;
   startNode?: ReactNode;
@@ -17,14 +18,13 @@ const TopBar: FunctionComponent<Props> = ({ endNode, startNode, title = '', ...r
       component="div"
       sx={
         {
-          // boxShadow: 'none', // Uncomment to hide shadow
+          boxShadow: 'none'
         }
       }
       {...restOfProps}
     >
-      <Toolbar disableGutters sx={{ paddingX: 1 }}>
+      <Toolbar disableGutters sx={{ paddingX: 1 }} variant='dense'>
         {startNode}
-
         <Typography
           variant="h6"
           sx={{
@@ -33,9 +33,11 @@ const TopBar: FunctionComponent<Props> = ({ endNode, startNode, title = '', ...r
             textAlign: 'center',
             whiteSpace: 'nowrap',
           }}
+          component='div'
         >
           {title}
         </Typography>
+        
 
         {endNode}
       </Toolbar>

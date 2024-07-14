@@ -1,7 +1,7 @@
 {
-  "name": "_TITLE_",
-  "short_name": "_TITLE_ app",
-  "description": "_DESCRIPTION_",
+  "name": "Trial",
+  "short_name": "Trial app",
+  "description": "description of app",
   "id": ".",
   "start_url": ".",
   "theme_color": "#ffffff",

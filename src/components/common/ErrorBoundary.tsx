@@ -20,6 +20,7 @@ class ErrorBoundary extends Component<Props, State> {
   static defaultProps = {
     name: 'Error Boundary',
   };
+  state: any;
 
   constructor(props: Props) {
     super(props);
@@ -34,7 +35,7 @@ class ErrorBoundary extends Component<Props, State> {
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     // Save information to help render Error UI
     this.setState({ error, errorInfo });
-    // TODO: Add log error messages to an error reporting service here
+    console.log(error);
   }
 
   render() {

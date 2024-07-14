@@ -35,7 +35,7 @@ export type IconName = keyof typeof ICONS;
  */
 export const ICONS /* Note: Setting type disables property autocomplete :( was - : Record<string, ComponentType> */ = {
   default: DefaultIcon,
-  logo: LogoIcon,
+  logo: MenuIcon,
   close: CloseIcon,
   menu: MenuIcon,
   settings: SettingsIcon,
